@@ -36,25 +36,27 @@
 
   <div class="flex flex-1 items-center justify-center">
       <div class="h-[571px] w-[520px] bg-[#192B22] border border-solid border-[#FFFFFF1A] p-[36px]">
-        <div class="bg-[#4ADE8026] w-[44px] h-[44px] rounded-[12px] flex justify-center items-center mb-[24px]">loc</div>
+        <div class="bg-[#4ADE8026] w-[44px] h-[44px] rounded-[12px] flex justify-center items-center mb-[24px]">
+          <img src="Frame.svg" alt="">
+        </div>
         <div class="text-[28px] text-[#F0FDF4] font-[600] mb-[8px]">Password generator</div>
         <div class="text-[14px] text-[#A4B9AD] font-[400] mb-[32px]">A strong password. One click away.</div>
         <div class="text-[12px] text-[#A4B9AD] font-[400] mb-[12px]">Your password</div>
         <div class="w-[448px] h-[64px] bg-[#101B16] rounded-[12px] border border-solid border-[#FFFFFF1A] pl-[16px] pr-[12px] flex items-center justify-between mb-[12px]">
-          <div class="text-[18px] text-[#BBF7D0] font-[400]">K9#mQ2&xR7!vN4@p</div>
-          <button class="w-[55px] h-[31px] bg-[#FFFFFF0D] flex justify-center items-center rounded-[8px] text-[12px] text-[#DCECE2] font-[500] cursor-pointer">Copy</button>
+          <div id="generated-password" class="text-[18px] text-[#BBF7D0] font-[400]">K9#mQ2&xR7!vN4@p</div>
+          <button id="copy" class="w-[55px] h-[31px] bg-[#FFFFFF0D] flex justify-center items-center rounded-[8px] text-[12px] text-[#DCECE2] font-[500] cursor-pointer">Copy</button>
         </div>
-        <div class="text-[12px] text-[#A4B9AD] font-[400] mb-[24px]">Uses letters, numbers, and symbols.</div>
+        <div id="text" class="text-[12px] text-[#A4B9AD] font-[400] mb-[24px]">Uses letters, numbers, and symbols.</div>
         <div class="flex items-center justify-between mb-16px">
           <div class="text-[14px] text-[#DCECE2] font-[400]">Password length</div>
-          <div class="text-[18px] text-[#86EFAC] font-[400]">16</div>
+          <div id="length" class="text-[18px] text-[#86EFAC] font-[400]">16</div>
         </div>
-        <input type="range" min="8" max="24" value="16" class="w-[448px] h-[20px] bg-[#52665A] cursor-pointer accent-[#4ADE80] mb-[4px]">
+        <input id="length-range" type="range" min="8" max="24" value="16" class="w-[448px] h-[20px] bg-[#52665A] cursor-pointer accent-[#4ADE80] mb-[4px]">
         <div class="flex items-center justify-between mb-[28px]">
           <div class="text-[12px] text-[#8AA294] font-[400]">8</div>
           <div class="text-[12px] text-[#8AA294] font-[400]">24</div>
         </div>
-        <button class="w-[448px] h-[48px] bg-[#4ADE80] rounded-[12px] flex justify-center items-center text-[14px] text-[#102418] font-[600] mb-[20px]">Generate password</button>
+        <button id="generate" class="w-[448px] h-[48px] bg-[#4ADE80] rounded-[12px] flex justify-center items-center text-[14px] text-[#102418] font-[600] mb-[20px] cursor-pointer">Generate password</button>
         <div class="justify-self-center text-[12px] text-[#8AA294] font-[400]">Generated in your browser. Never saved.</div>
       </div>
   </div>
