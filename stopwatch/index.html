@@ -40,30 +40,30 @@
             <div class="size-[44px] bg-[#B5CBB21A] flex justify-center items-center rounded-[12px]">
               <img src="Frame.svg" alt="">
             </div>
-            <div class="w-[62px] h-[29px] rounded-[99px] border border-[#C5D9BD26] flex justify-center items-center text-[12px] text-[#C5D9BD] font-500">Ready</div>
+            <div id="state" class="w-[62px] h-[29px] rounded-[99px] border border-[#C5D9BD26] flex justify-center items-center text-[12px] text-[#C5D9BD] font-500">Ready</div>
           </div>
           <div class="text-[40px] text-[#F0FDF4] font-[400] mb-[8px]">Stopwatch</div>
           <div class="text-[14px] text-[#A4B9AD] font-[400] mb-[36px]">Make time for what matters.</div>
           <div class="h-[158px] w-[100%] border-t border-b border-[#B5CBB226] flex items-center justify-around">
             <div class="flex flex-col items-center gap-[16px]">
-              <div class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
+              <div id="hours" class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
               <div class="text-[9px] text-[#9BAD9E] font-500 tracking-[2px]">HOURS</div>
             </div>
             <div class="text-[40px] text-[#5C7161] font-[400] mb-[35px]">:</div>
             <div class="flex flex-col items-center gap-[16px]">
-              <div class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
+              <div id="minutes" class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
               <div class="text-[9px] text-[#9BAD9E] font-500 tracking-[2px]">MINUTES</div>
             </div>
             <div class="text-[40px] text-[#5C7161] font-[400] mb-[35px]">:</div>
             <div class="flex flex-col items-center gap-[16px]">
-              <div class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
+              <div id="seconds" class="text-[56px] text-[#EDF3E8] font-[300] leading-[56px] tracking-[-2px]">00</div>
               <div class="text-[9px] text-[#9BAD9E] font-500 tracking-[2px]">SECONDS</div>
             </div>
           </div>
           <div class="flex gap-[12px] mt-[32px]">
-            <button class="w-[258px] h-[48px] bg-[#B5CBB2] rounded-[12px] text-[14px] text-[#102418] font-[600] cursor-pointer">Start</button>
-            <button class="w-[129px] h-[48px] bg-[#FFFFFF0D] rounded-[12px] border border-[#FFFFFF1A] text-[14px] text-[#DCECE2] font-500 opacity-[35%] cursor-pointer">Pause</button>
-            <button class="w-[129px] h-[48px] bg-[#FFFFFF0D] rounded-[12px] border border-[#FFFFFF1A] text-[14px] text-[#DCECE2] font-500 opacity-[35%] cursor-pointer">Reset</button>
+            <button id="start-button" type="button" class="w-[258px] h-[48px] bg-[#B5CBB2] rounded-[12px] text-[14px] text-[#102418] font-[600] cursor-pointer disabled:cursor-not-allowed disabled:opacity-35">Start</button>
+            <button id="pause-button" type="button" disabled class="w-[129px] h-[48px] bg-[#FFFFFF0D] rounded-[12px] border border-[#FFFFFF1A] text-[14px] text-[#DCECE2] font-500 cursor-pointer disabled:cursor-not-allowed disabled:opacity-35">Pause</button>
+            <button id="reset-button" type="button" disabled class="w-[129px] h-[48px] bg-[#FFFFFF0D] rounded-[12px] border border-[#FFFFFF1A] text-[14px] text-[#DCECE2] font-500 cursor-pointer disabled:cursor-not-allowed disabled:opacity-35">Reset</button>
           </div>
           <div class="mt-[20px] justify-self-center text-[12px] text-[#8AA294] font-400">A moment of focus. At your own pace.</div>
         </div>
