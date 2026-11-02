@@ -31,11 +31,15 @@
         <div class="size-[392px] overflow-hidden" >
           <div class="relative size-[392px] bg-[#E9E7DF] rounded-[999px] shadow-[0px_24px_70px_-25px_#5261575E] flex justify-center items-center">
             <div class="absolute size-[360px] bg-[#FCFBF7] rounded-[180px] border border-[#D8DBD1] flex justify-center items-center">
-              <div class="text-[9px] text-[#8F998A] font-600 leading-[3px]" >SWISS</div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div class="absolute size-[4px] bg-[#C47E57]"></div>
+              <div id="markers" class="absolute inset-0"></div>
+              <div id="numbers" class="absolute inset-0 font-serif text-[24px] font-[400]"></div>
+              <div class="absolute text-[9px] text-[#8F998A] font-600 tracking-[3px] top-[100px]" >SWISS</div>
+              <div id="hour-hand" class="absolute bottom-1/2 h-[27%] w-[7px] origin-bottom bg-[#253B35] rounded-[8px]"></div>
+              <div id="minute-hand" class="absolute bottom-1/2 h-[34%] w-[4px] origin-bottom bg-[#253B35] rounded-[5px]"></div>
+              <div id="second-hand" class="absolute left-1/2 bottom-1/2 h-[39%] w-[2px] origin-bottom bg-[#C47E57] rounded-[4px]">
+                <span class="absolute top-[140px] h-[30px] w-[2px] origin-top bg-[#C47E57] rounded-[4px]"></span>
+              </div>
+              <div class="absolute size-[12px] bg-[#C47E57] rounded-[50%] border-[4px] border-solid border-[#FCFBF7]"></div>
             </div>
           </div>
         </div>
